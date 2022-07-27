@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.scss'
-import CartWidget from './CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
 
 function NavBar() {
   return (

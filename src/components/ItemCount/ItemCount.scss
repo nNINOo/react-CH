@@ -1,0 +1,24 @@
+.count {
+    display: flex;
+    align-items: baseline;
+}
+
+.b-count {
+    background-color: #777777;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 3px 10px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.b-count:hover {
+    background-color: white;
+    color: #777777;
+    border: 2px solid #777777;
+}
