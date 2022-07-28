@@ -1,15 +1,19 @@
 import './ItemCount.scss'
 import { useState } from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({stock, initial}) => {
 
-    const [contador, setContador] = useState(1)
+    const [contador, setContador] = useState(initial)    
 
     const addNumber = () => {
-        setContador(contador + 1)
+        if (contador < stock) {
+            setContador(contador + 1)
+        }
     }
     const removeNumber = () => {
-        setContador(contador - 1)
+        if(contador > 1 ) {
+            setContador(contador - 1)
+        }
     }
     return (
         <div className='count'>
