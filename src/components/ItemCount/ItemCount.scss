@@ -22,3 +22,23 @@
     color: #777777;
     border: 2px solid #777777;
 }
+
+.btn-buy {
+    background-color: #3eb8a7;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 3px 10px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background-color: white;
+    color: #3eb8a7;
+    border: 2px solid #3eb8a7;
+}

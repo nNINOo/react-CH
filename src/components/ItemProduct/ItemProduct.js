@@ -3,17 +3,16 @@ import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 
 const ItemProduct = ({ data, action }) => {
-    const { title, image, price, stock, id } = data
+    const { title, image, price, id } = data
 
     return (
         <div className='item-product'>
-            <Link to={`/productos/${id}`}>
-                <img src={`/assets/${image}`} alt='Imagen Producto' />
-                <p className='titulo-card'>{title}</p>
-            </Link>
+            <img src={`/assets/${image}`} alt='Imagen Producto' />
+            <p className='titulo-card'>{title}</p>
             <span>$ {price}</span>
-            <ItemCount stock={stock} initial={1} />
-            <button className='btn-buy' onClick={action}>Añadir al carrito</button>
+            <Link to={`/productos/${id}`}>
+                <button className='btn-buy'>Ver Producto</button>
+            </Link>
         </div>
     )
 }

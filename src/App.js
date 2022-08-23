@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Nosotros from './pages/Nosotros';
 import Detail from './pages/Detail';
+import Checkout from './pages/Checkout';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contacto" element={<Contact />} />
         <Route path="/category/:category" element={<ItemListContainer/>} />
         <Route path="/productos/:id" element={<Detail />} />
+        <Route path="/cart" element={<Checkout />} />
         <Route path="*" element={<h1> ERROR 404 - No se ha encontrado la pagina.</h1>} />
       </Routes>
     </BrowserRouter>
