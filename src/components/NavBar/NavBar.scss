@@ -5,3 +5,25 @@
 .cart-widget {
     color: rgb(179, 179, 179);
 }
+
+.links {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 11px;
+    font-size: 15px;
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.links-drop {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 5px;
+}

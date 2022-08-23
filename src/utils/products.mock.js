@@ -4,6 +4,7 @@ const products = [
         title: "Producto 1",
         price: 999,
         image: "p1.jpg",
+        category: 'pantalones',
         stock: 10
     },
     {
@@ -11,6 +12,7 @@ const products = [
         title: "Producto 2",
         price: 999,
         image: "p2.jpg",
+        category: 'pantalones',
         stock: 10
     },
     {
@@ -18,6 +20,7 @@ const products = [
         title: "Producto 3",
         price: 999,
         image: "r1.jpg",
+        category: 'remeras',
         stock: 10
     },
     {
@@ -25,6 +28,7 @@ const products = [
         title: "Producto 4",
         price: 999,
         image: "r2.webp",
+        category: 'remeras',
         stock: 10
     },
     {
@@ -32,6 +36,7 @@ const products = [
         title: "Producto 5",
         price: 999,
         image: "b1.jpg",
+        category: 'abrigo',
         stock: 10
     },
     {
@@ -39,6 +44,7 @@ const products = [
         title: "Producto 6",
         price: 999,
         image: "b2.jpg",
+        category: 'abrigo',
         stock: 10
     },
     {
@@ -46,6 +52,7 @@ const products = [
         title: "Producto 7",
         price: 999,
         image: "c1.jpg",
+        category: 'abrigo',
         stock: 10
     },
     {
@@ -53,6 +60,7 @@ const products = [
         title: "Producto 8",
         price: 999,
         image: "c2.webp",
+        category: 'abrigo',
         stock: 10
     }
 ]

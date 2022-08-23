@@ -2,17 +2,25 @@ import { useEffect, useState } from "react"
 import './ItemListContainer.scss'
 import ItemList from "../ItemList/ItemList"
 import products from '../../utils/products.mock'
+import { useParams } from "react-router-dom"
 
 
 const ItemListContainer = ({ title }) => {
 
+    const { category } = useParams();
+
     const [listProducts, setListProducts] = useState([])
+
+    const filterCategory = products.filter((product) => product.category === category)
 
     const getProducts = new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products)
+            if (category) {
+                resolve(filterCategory)
+            } else {
+                resolve(products)
+            }
         }, 2000)
-
     })
 
     useEffect(() => {
@@ -25,7 +33,7 @@ const ItemListContainer = ({ title }) => {
                 console.log("error en la llamada")
             })
             .finally(() => { })
-    }, [])
+    }, [category])
 
     return (
         <section>
