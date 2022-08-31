@@ -20,13 +20,13 @@ const ItemListContainer = ({ title }) => {
             } else {
                 resolve(products)
             }
-        }, 2000)
+        }, 200)
     })
 
     useEffect(() => {
         getProducts
             .then((res) => {
-                console.log("prods", res)
+                //console.log("prods", res)
                 setListProducts(res)
             })
             .catch((err) => {
